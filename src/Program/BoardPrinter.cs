@@ -1,4 +1,3 @@
-using System;
 using System.Text;
 
 namespace Ucu.Poo.GameOfLife
@@ -12,7 +11,7 @@ namespace Ucu.Poo.GameOfLife
     public class BoardPrinter
     {
 
-        public void PrintBoard(int[,] board) 
+        public void PrintBoard(bool[,] board) 
         {
             // Limpia la Consola antes de empezar
             Console.Clear();
@@ -32,7 +31,7 @@ namespace Ucu.Poo.GameOfLife
                 {
                     
                     // Si la celda está viva, agrega "|X|", si está muerta, "__"
-                    if (board[x, y]==1)
+                    if (board[x, y])
                     {
                         output.Append("|X|");
                     }
