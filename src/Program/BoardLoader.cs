@@ -1,9 +1,9 @@
-namespace GameOfLife.IO
+namespace Ucu.Poo.GameOfLife
 {
     /// <summary>
     /// leer un archivo de texto y convertirlo en un tablero
     /// </summary>
-    public sealed class BoardLoader
+    public class BoardLoader
     {
         public bool[,] Load(string path)
         {

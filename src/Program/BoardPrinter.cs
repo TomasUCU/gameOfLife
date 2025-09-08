@@ -37,7 +37,7 @@ namespace Ucu.Poo.GameOfLife
                     }
                     else
                     {
-                        output.Append("__");
+                        output.Append("___");
                     }
                 }
                 //Salto de linea  al final de cada fila
