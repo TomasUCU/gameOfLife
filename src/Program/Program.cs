@@ -1,12 +1,25 @@
-﻿using System;
+﻿using System.Threading;
+using Ucu.Poo.GameOfLife;
 
-namespace Ucu.Poo.GameOfLife
+namespace Program
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BoardImporter importer = new BoardImporter();
+            Board board = importer.Import();
+
+            GameEngine engine = new GameEngine(board);
+            BoardPrinter printer = new BoardPrinter(board);
+
+            while (true)
+            {
+                printer.Print();          
+                engine.NextGeneration(); 
+
+                Thread.Sleep(300);        
+            }
         }
     }
 }

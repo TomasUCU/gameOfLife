@@ -1,8 +1,10 @@
 using System;
 using System.Text;
-using System.Threading;
-
 namespace Ucu.Poo.GameOfLife
+/// <summary>
+/// Colabora con la clase Board y muestra por consola su estado actual. 
+/// Recorre las células y representa visualmente su estado actual. 
+/// </summary>
 {
     public class BoardPrinter
     {
